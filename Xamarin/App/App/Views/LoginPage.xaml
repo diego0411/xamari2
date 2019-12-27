@@ -50,7 +50,9 @@
                 <Button
                         Text="login"
                         BackgroundColor="Navy"
-                    TextColor="White">
+                    TextColor="White"
+                    Command="{Binding LoginComand,Mode=TwoWay}">
+                    
                 </Button>
 
             </StackLayout>
