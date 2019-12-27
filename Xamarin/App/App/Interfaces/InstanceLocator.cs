@@ -9,13 +9,13 @@ namespace App.Interfaces
          public class InstanceLocator
        {
          #region Properties
-         public MainViewModel Main { get; set; }
+         public MainViewModels Main { get; set; }
          # endregion
 
          #region Constructors
          public InstanceLocator()
          {
-            this.Main = new MainViewModel();
+            this.Main = new MainViewModels();
          }
          #endregion
        }

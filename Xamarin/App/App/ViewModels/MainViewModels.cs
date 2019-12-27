@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace App.ViewModels
 {
     //using Models;
@@ -17,19 +18,19 @@ namespace App.ViewModels
         public LoginViewModel Login { get; set; }
         #endregion
         #region Constructors
-        public MainViewModel()
+        public MainViewModels()
         {
             instance = this;
             this.Login = new LoginViewModel();
         }
         #endregion
         #region Singleton
-        private static MainViewModel instance;
-        public static MainViewModel GetInstance()
+        private static MainViewModels instance;
+        public static MainViewModels GetInstance()
         {
             if (instance == null)
             {
-                return new MainViewModel();
+                return new MainViewModels();
             }
             return instance;
         }
